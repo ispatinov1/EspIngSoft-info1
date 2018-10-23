@@ -16,11 +16,11 @@ class Config {
     }
     
     function getBBDDpruebasGestionSolicitudes() {
-        $this->BBDDpruebasGestionSolicitudes=array('host' => '127.0.0.1',
+        $this->BBDDpruebasGestionSolicitudes=array('host' => 'postgresql',
                                                     'port' => '5432',
                                                     'user' => 'postgres',
                                                     'password' => 'postgresHH123',
-                                                    'service' => 'gestionSolicitudesAcademicas');
+                                                    'service' => 'gestionsolicitudesacademicas');
         return $this->BBDDpruebasGestionSolicitudes;
     }
 
@@ -28,10 +28,3 @@ class Config {
         return $this->BBDDproduccionGestionSolicitudes;
     }   
 }
-
-
-
-
-
-
-

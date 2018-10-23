@@ -1,0 +1,24 @@
+@font-face {
+    font-family: Futura Md Bt;
+    src: url(../../aux/css/futura-md-bt/FuturaMediumBT.ttf);
+}
+body {
+    font-family: Futura Md Bt;
+}
+
+.jumbotron {
+    /*background-image: url("../imagenes/logotipoUGC.png");*/
+    background-color: #6F7175;
+    color: #FFFFFF;
+    /*margin-bottom: 0;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;*/
+}
+
+.modal-backdrop {
+    background-color: black;    
+    opacity:0.95 !important;
+}

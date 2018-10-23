@@ -1,0 +1,11 @@
+# Apache configuration file (see httpd.apache.org/docs/2.2/mod/quickreference.html)
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    #RewriteBase /
+    #RewriteBase /usuarios/
+    RewriteCond %{REQUEST_FILENAME} !-d  
+    RewriteCond %{REQUEST_FILENAME} !-f  
+    RewriteCond %{REQUEST_FILENAME} !-l  
+    RewriteRule ^(.+)$ API_Usuarios.php?url=$1 [QSA,NC,L]  
+</IfModule>
